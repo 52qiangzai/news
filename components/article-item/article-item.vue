@@ -9,13 +9,13 @@
 					{{item.title}}
 				</view>
 			</view>
-			<view class="info">
+			<view class="info" v-show="!item.looktime">
 				<view class="font">{{item.author}}</view>
 				<view class="font">浏览量{{item.hits}}</view>
 			</view>
-			<!-- <view class="info">
-				<view class="font">浏览器时间</view>
-			</view> -->
+			<view class="info" v-show="item.looktime">
+				<view class="font">浏览器时间 {{item.looktime}}</view>
+			</view>
 		</view>
 	</view>
 </template>

@@ -4,12 +4,13 @@
 			<image src="/static/images/user_top.png" mode="aspectFill"></image>
 			<view class="title">浏览历史</view>
 		</view>
-		<view class="content">
-			<view class="item">
-
+		<view class="content" v-show="historyArr.length">
+			<view class="item" v-for="item in historyArr" :key="item.id" @click="articleDetail(item.classid,item.id)">
+				<article-item :item="item"></article-item>
 			</view>
+
 		</view>
-		<view class="noContent">
+		<view class="noContent" v-show="!historyArr.length">
 			<image src="/static/images//no_history.png" mode="widthFix"></image>
 			<div class="text">暂无浏览记录</div>
 		</view>
@@ -17,12 +18,17 @@
 </template>
 
 <script>
+	import articleMixins from '../../mixins/articleMixin.js'
 	export default {
+		mixins: [articleMixins],
 		data() {
 			return {
-
+				historyArr: []
 			};
-		}
+		},
+		onShow() {
+			this.historyArr = uni.getStorageSync('historyArr')
+		},
 	}
 </script>
 
