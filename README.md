@@ -1,10 +1,18 @@
 # uniapp新闻项目
 
-本项目为uniapp练手项目，
+本项目为uniapp练手项目
+
+主要功能为首页新闻列表展示，下拉自动加载，点击查看详情，数据格式化渲染，浏览历史记录
+
+![](https://static.q6q.cc/uniapp/news/Snipaste_2023-03-24_11-27-43.png)
+
+![](https://static.q6q.cc/uniapp/news/Snipaste_2023-03-24_11-27-56.png)
+
+![](https://static.q6q.cc/uniapp/news/Snipaste_2023-03-24_11-28-06.png)
 
 
 
-## 接口
+## 收集的接口
 
 ------
 
