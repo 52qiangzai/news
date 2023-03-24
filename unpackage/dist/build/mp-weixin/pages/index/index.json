@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "新闻首页",
+  "usingComponents": {
+    "article-item": "/components/article-item/article-item"
+  }
+}

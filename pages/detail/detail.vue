@@ -24,9 +24,11 @@
 		data() {
 			return {
 				detailObj: {},
+				options: {}
 			};
 		},
 		onLoad(options) {
+			this.options = options;
 			this.getDetail(options)
 		},
 		methods: {

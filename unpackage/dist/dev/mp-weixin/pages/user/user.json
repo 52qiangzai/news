@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "个人中心",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "article-item": "/components/article-item/article-item"
+  }
+}

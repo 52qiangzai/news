@@ -9,11 +9,11 @@
 					{{item.title}}
 				</view>
 			</view>
-			<view class="info" v-show="!item.looktime">
+			<view class="info" v-if="!item.looktime">
 				<view class="font">{{item.author}}</view>
 				<view class="font">浏览量{{item.hits}}</view>
 			</view>
-			<view class="info" v-show="item.looktime">
+			<view class="info" v-else>
 				<view class="font">浏览器时间 {{item.looktime}}</view>
 			</view>
 		</view>

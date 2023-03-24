@@ -4,13 +4,13 @@
 			<image src="/static/images/user_top.png" mode="aspectFill"></image>
 			<view class="title">浏览历史</view>
 		</view>
-		<view class="content" v-show="historyArr.length">
+		<view class="content" v-if="historyArr.length">
 			<view class="item" v-for="item in historyArr" :key="item.id" @click="articleDetail(item.classid,item.id)">
 				<article-item :item="item"></article-item>
 			</view>
 
 		</view>
-		<view class="noContent" v-show="!historyArr.length">
+		<view class="noContent" v-else>
 			<image src="/static/images//no_history.png" mode="widthFix"></image>
 			<div class="text">暂无浏览记录</div>
 		</view>
@@ -55,11 +55,8 @@
 		}
 
 		.content {
-			padding: 30rpx;
-			padding-top: 30rpx;
-
 			.item {
-				padding: 20rpx 0;
+				padding: 20rpx;
 				border-bottom: 1rpx #e2e2e2 dotted;
 			}
 		}

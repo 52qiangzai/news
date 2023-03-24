@@ -1,0 +1,1 @@
+.detail{padding:50rpx 30rpx}.detail .title{font-size:50rpx;line-height:1.6em}.detail .info{padding:0 30rpx;margin:50rpx 0;height:80rpx;background:#f6f6f6;display:flex;justify-content:space-between;align-items:center;font-size:22rpx;color:#888}.detail .state{background:#fef0f0;font-size:26rpx;padding:20rpx;color:#f89898;line-height:1.8em}

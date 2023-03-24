@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/detail/detail"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "新闻",
+    "navigationBarBackgroundColor": "#31c27c",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/home.png",
+        "selectedIconPath": "static/images/home_select.png"
+      },
+      {
+        "text": "个人",
+        "pagePath": "pages/user/user",
+        "iconPath": "static/images/me.png",
+        "selectedIconPath": "static/images/me_select.png"
+      }
+    ]
+  },
+  "permission": {},
+  "usingComponents": {}
+}
